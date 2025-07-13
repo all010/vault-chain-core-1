@@ -1,0 +1,37 @@
+### المطلوب
+- إنشاء node جديد باستخدام `substrate-node-template`
+- إضافة pallet `pallet-medical-records` لرفع ملفات مشفرة
+
+### Acceptance Criteria
+- يعمل `cargo run --release -- --dev` بدون أخطاء
+- يقبل call `store_record(cid, hash)` عبر RPC
+
+# دليل الإعداد المحلي
+
+## المتطلبات
+- Rust 1.72+
+- Flutter 3.19+
+- IPFS Desktop أو CLI
+
+## الخطوات
+1. استنساخ المستودع:
+   ```bash
+   git clone https://github.com/all010/vault-chain-real.git
+   cd vault-chain-real
+
+cd node
+cargo run --release -- --dev
+
+cd mobile
+flutter pub get
+flutter run
+
+
+---
+
+### ✅ الخطوة 8: رفع كل شيء
+```bash
+git add .
+git commit -m "docs: add setup guide and first issue"
+git push origin main
+
